@@ -17,11 +17,11 @@ function Navbar() {
 
 
 
-<div className='shadow-xl w-full fixed top-0 left-0 rounded-b-2xl lg:shadow-none backdrop-blur-3xl'>
+<div className='shadow-xl w-full  top-0 left-0  md:shadow-none backdrop-blur-3xl fixed  bg-white md:bg-nav'>
       <div className='md:flex items-center justify-between bgv py-4 md:px-10 px-7'>
       <div className='font-bold text-2xl cursor-pointer flex items-center  
-      text-gray-800 lg:text-white'>
-        <span className='text-4xl text-black lg:text-white mr-1 pt-1'>
+      text-gray-800 md:text-white'>
+        <span className='text-4xl text-black md:text-white mr-1 pt-1'>
         <DiDrupal />
         </span>
         NovaNudge
@@ -31,11 +31,11 @@ function Navbar() {
       <GiHamburgerMenu name={open ? 'close':'menu'}></GiHamburgerMenu>
       </div>
 
-      <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:bg-transparent md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
+      <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white backdrop-blur-xl md:bg-transparent md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
         {
           Links.map((link)=>(
             <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-              <a href={link.link} className='text-gray-900 lg:text-white hover:text-purple-800 lg:hover:text-purple-300 duration-500'>{link.name}</a>
+              <a href={link.link} className='text-gray-900 md:text-white hover:text-purple-800 lg:hover:text-purple-300 duration-500'>{link.name}</a>
             </li>
           ))
         }

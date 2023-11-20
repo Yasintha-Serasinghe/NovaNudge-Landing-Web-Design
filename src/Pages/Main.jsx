@@ -1,11 +1,15 @@
 import React from 'react';
 import Hero from '../Components/Hero';
 import Navbar from '../Components/Navbar';
+import Stats from '../Components/Stats';
 
 function Main() {
   
   return (
     <div>
+      
+      
+    {/*   <div>
       <section className='relative'>
       <div className='absolute top-0 lg:top-9 lg:mx-36'>
           <Hero />
@@ -17,11 +21,13 @@ function Main() {
 
          
         </div>
-        <Navbar/>
+       
+    
        {/*  <div className='absolute top-0 lg:top-6 lg:mx-36'>
           <Hero />
         </div> */}
-      </section>
+     
+      
     </div>
   );
 }

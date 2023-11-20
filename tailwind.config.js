@@ -3,7 +3,14 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        nav: '#6c2bd9'},
+      backgroundImage: {
+        'wave': "url('./Assets/wave.svg')",
+        'back':"url('./Assets/back.svg')",
+      },
+    },
   },
   daisyui: {
     themes:["light"]

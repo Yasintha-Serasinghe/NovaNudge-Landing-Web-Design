@@ -1,47 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { GiHamburgerMenu } from "react-icons/gi";
+import { DiDrupal } from "react-icons/di";
 
 function Navbar() {
+ 
+    let Links =[
+      {name:"Home",link:"/"},
+      {name:"Service",link:"/"},
+      {name:"About",link:"/"},
+      {name:"Contact us",link:"/"},
+    ];
+    let [open,setOpen]=useState(false);
   return (
     <div>
-       <div className="navbar bg-base-100">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <label tabIndex={0} className="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-      </label>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+     
+
+
+
+<div className='shadow-xl w-full fixed top-0 left-0 rounded-b-2xl lg:shadow-none backdrop-blur-3xl'>
+      <div className='md:flex items-center justify-between bgv py-4 md:px-10 px-7'>
+      <div className='font-bold text-2xl cursor-pointer flex items-center  
+      text-gray-800 lg:text-white'>
+        <span className='text-4xl text-black lg:text-white mr-1 pt-1'>
+        <DiDrupal />
+        </span>
+        NovaNudge
+      </div>
+      
+      <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+      <GiHamburgerMenu name={open ? 'close':'menu'}></GiHamburgerMenu>
+      </div>
+
+      <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:bg-transparent md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
+        {
+          Links.map((link)=>(
+            <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
+              <a href={link.link} className='text-gray-900 lg:text-white hover:text-purple-800 lg:hover:text-purple-300 duration-500'>{link.name}</a>
+            </li>
+          ))
+        }
+       <button type='submit' className='border bg-purple-700 hover:bg-purple-900 rounded-full shadow-md  text-white block md:ml-8 px-6 py-2 md:mx-auto'>login</button>
       </ul>
+      </div>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
-  </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li tabIndex={0}>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Item 3</a></li>
-    </ul>
-  </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
-  </div>
-</div>
+  
       
     </div>
   )

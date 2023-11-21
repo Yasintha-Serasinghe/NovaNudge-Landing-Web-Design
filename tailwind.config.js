@@ -9,6 +9,7 @@ module.exports = {
       backgroundImage: {
         'wave': "url('./Assets/wave.svg')",
         'back':"url('./Assets/back.svg')",
+        'log':"url('./Assets/login.svg')",
       },
     },
   },

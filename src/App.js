@@ -1,34 +1,31 @@
-import React from 'react'
-import Hero from './Components/Hero'
-import Main from './Pages/Main'
-import Navbar from './Components/Navbar'
-import Stats from './Components/Stats'
-import PriceSection from './Components/PriceSection'
-import Content from './Components/Content'
-import News from './Components/News'
-import Footer  from './Components/Footer'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import Signin from './Pages/Signin';
+import Signup from './Pages/Signup';
+import Dashbord from './Components/Dashbord';
+
+
+
+
+
+
+
+
+
 
 
 function App() {
   return (
-    <div>
-    {/*   <Hero/> */}
-   
-      <Hero />
-    
-      <Content/>
-      
-      <Stats/>
-      <br/>
-      <PriceSection/>
-      <br/>
-      
-      <News/>
-     
-      <Footer/>
-      
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+         <Route path="/l" element={<Signin/>} /> 
+         <Route path="/r" element={<Signup/>} /> 
+         <Route path="/d" element={<Dashbord/>} /> 
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

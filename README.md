@@ -4,9 +4,10 @@
 </br>
 
 ### Demo
-![Screenshot 2023-11-22 103206](https://github.com/Yasintha-Serasinghe/NovaNudge-Landing-Web-Design/assets/150212148/2009aace-70bb-4d46-872d-6302ad964329)
 
-![Screenshot 2023-11-22 103134](https://github.com/Yasintha-Serasinghe/NovaNudge-Landing-Web-Design/assets/150212148/075716b0-469a-43ca-86b0-e50e60fedc5f)
+![Screenshot 2023-11-22 103206](https://github.com/Yasintha-Serasinghe/NovaNudge-Landing-Web-Design/assets/150212148/ac24ebe2-f408-4ebb-bf5d-1341c7bca154.png)
+
+![Screenshot 2023-11-22 103134](https://github.com/Yasintha-Serasinghe/NovaNudge-Landing-Web-Design/assets/150212148/f1124a13-b7c7-4ae4-80f9-8d637ad36472.png)
 
 
 
@@ -29,7 +30,7 @@
  repository clone:
 
 ```bash
-  git clone https://github.com/Yasintha-Serasinghe/TipTapp-WebDesign.git
+  git clone https://github.com/Yasintha-Serasinghe/NovaNudge-Landing-Web-Design.git
 
 ```
 

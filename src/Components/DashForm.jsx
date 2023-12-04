@@ -68,7 +68,7 @@ function DashForm() {
       const blobName = `${Date.now()}-${file.name}`;
 
       // Azure Storage SAS token (for security, generate this server-side)
-      const sasToken = 'sp=rw&st=2023-12-04T08:24:44Z&se=2023-12-04T16:24:44Z&sv=2022-11-02&sr=c&sig=Kj7%2B0y89NeWrwziOBcUNxYzAVz5cDWy%2B%2FSEvyQYylas%3D';
+      const sasToken = '';
 
       // Azure Storage blob URL with SAS token
       const blobServiceClient = new BlobServiceClient(`https://${storageAccount}.blob.core.windows.net?${sasToken}`);
@@ -85,7 +85,7 @@ function DashForm() {
       
 
       // Use Bitly API to shorten the URL
-      const accessToken = '59cc3598e043fb0bc9e5a8a5719cd29367b4e683';
+      const accessToken = '';
       const bitlyAPI = 'https://api-ssl.bitly.com/v4/shorten';
 
       const bitlyResponse = await fetch(bitlyAPI, {

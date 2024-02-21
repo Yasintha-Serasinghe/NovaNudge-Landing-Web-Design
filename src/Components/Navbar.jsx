@@ -13,7 +13,7 @@ function Navbar() {
   let [open, setOpen] = useState(false);
   return (
     <div>
-      <div className="shadow-xl w-full  top-0 left-0  md:shadow-none backdrop-blur-3xl fixed  bg-white md:bg-nav z-10">
+      <div className="z-10 shadow-xl w-full  top-0 left-0  md:shadow-none backdrop-blur-3xl fixed  bg-white md:bg-nav ">
         <div className="md:flex items-center justify-between bgv py-4 md:px-10 px-7">
           <div
             className="font-bold text-2xl cursor-pointer flex items-center  

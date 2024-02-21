@@ -33,7 +33,7 @@ function Navbar() {
           </div>
 
           <ul
-            className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white backdrop-blur-xl md:bg-transparent md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+            className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white backdrop-blur-xl md:bg-transparent md:z-auto z-10 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
               open ? "top-20 " : "top-[-490px]"
             }`}
           >
